@@ -19,9 +19,9 @@ document.getElementById('imageDependentColor').addEventListener('click',function
 })
 
 function setImageDependentBackgroundColor(containerElement){
-    let imageToParse = containerElement.querySelector('img');
-    let width = imageToParse.width;
-    let height = imageToParse.height;
+    const imageToParse = containerElement.querySelector('img');
+    const width = imageToParse.width;
+    const height = imageToParse.height;
  
     // create an unattached canvas element and draw the image onto it
     let canvas = document.createElement('canvas');
@@ -45,7 +45,7 @@ function setImageDependentBackgroundColor(containerElement){
 
 
 function setRandomBackgroundColor(){
-    let randomColor = '#' + Math.floor(Math.random() * (parseInt("FFFFFF", 16) + 1)).toString(16);
+    const randomColor = '#' + Math.floor(Math.random() * (parseInt("FFFFFF", 16) + 1)).toString(16);
 
     colorizedParts.forEach(function(el){
         el.style.backgroundColor = randomColor;
