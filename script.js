@@ -44,7 +44,6 @@ function setImageDependentBackgroundColor(containerElement){
 }
 
 
-
 function setRandomBackgroundColor(){
     let randomColor = '#' + Math.floor(Math.random() * (parseInt("FFFFFF", 16) + 1)).toString(16);
 
@@ -53,3 +52,10 @@ function setRandomBackgroundColor(){
     });
 }
 
+
+
+
+/* 
+note: Array.from() which is used in setImageDependentBackgroundColor() may need to be polyfilled to work on older browsers. 
+See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from?v=example#Polyfill 
+*/
