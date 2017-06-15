@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+    /* Examples */
+        img {
+            display: block;
+        }
+        section { 
+            margin-bottom: 1rem;
+            padding: 2rem 0;
+            display: flex;
+         }
+        .full-width {
+            justify-content: center;
+            align-items: center;
+        }
+        .full-width img {
+            width:  75vw;
+        }
+        .half-width {
+            justify-content: flex-end;
+        }
+        .half-width > div {
+            width: 25vw;
+            background-color: blue;
+        }
+        .half-width img {
+            width: 25vw;
+            position: relative;
+            left: -100%;
+        }
+    /* controls */        
+        button {
+            padding: 0.5rem;
+            font-size: 1.25;  
+            margin-top: 1rem;          
+        }
+        .controls {
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        body {
+            margin: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="controls">
+    <button id="randomColor">To Random Color</button>
+    <button id="imageDependentColor">To Image Dependent Color</button>
+</div>
+<section class="full-width">
+    <img src="earth.jpg" alt="Lone Earth by Kurzgesagt" />
+</section>
+
+<section class="half-width">
+    <div>
+            <img src="halved.png" alt="half" />
+    </div>
+</section>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
